@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDE16B34-80CA-42BA-A137-DB7775E96F06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SinemaOtomasyonu2</RootNamespace>
+    <AssemblyName>SinemaOtomasyonu2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar.Designer.cs">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biletSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletSatis.Designer.cs">
+      <DependentUpon>biletSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filmekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filmekle.Designer.cs">
+      <DependentUpon>Filmekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="anapage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anapage.Designer.cs">
+      <DependentUpon>anapage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salonekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salonekle.Designer.cs">
+      <DependentUpon>salonekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satisliste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satisliste.Designer.cs">
+      <DependentUpon>Satisliste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seansekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seansekle.Designer.cs">
+      <DependentUpon>Seansekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seansliste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seansliste.Designer.cs">
+      <DependentUpon>seansliste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sinema.cs">
+      <DependentUpon>sinema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sinema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sinema.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayarlar.resx">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biletSatis.resx">
+      <DependentUpon>biletSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filmekle.resx">
+      <DependentUpon>Filmekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="anapage.resx">
+      <DependentUpon>anapage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salonekle.resx">
+      <DependentUpon>salonekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satisliste.resx">
+      <DependentUpon>Satisliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seansekle.resx">
+      <DependentUpon>Seansekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seansliste.resx">
+      <DependentUpon>seansliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sinema.xsc">
+      <DependentUpon>sinema.xsd</DependentUpon>
+    </None>
+    <None Include="sinema.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sinema.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sinema.xss">
+      <DependentUpon>sinema.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5108060.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız tasarım %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız tasarım %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contact-details-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-project-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-project-setup-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-business-network-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-grocery-store-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-job-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mockup-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-group-of-companies-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-slice-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exchange-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-flipboard-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-management-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-user-clip-art-user-5abf13db5624e4.1771742215224718993529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\564px-Clap_cinema.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big-open-clapper-board-movie-reel-cinema-icon-set-movie-film-elements-flat-design-cinema-movie-time-flat-icons-f-95500226.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bfff93128b69a4e778d3dc4f020db3b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconleak-Atrous-Movie.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmstripe-160520_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-2-time-png-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time+Targeting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1451868.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sl-NLBb_cover.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
